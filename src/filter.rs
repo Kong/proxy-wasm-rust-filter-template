@@ -75,6 +75,10 @@ impl RootContext for MyFilterRoot {
         }
     }
 
+    fn get_type(&self) -> Option<ContextType> {
+        Some(ContextType::HttpContext)
+    }
+
     fn create_http_context(&self, context_id: u32) -> Option<Box<dyn HttpContext>> {
         info!("create_http_context: context_id: {}", context_id);
 
