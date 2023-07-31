@@ -13,4 +13,3 @@ proxy-wasm = "0.2"
 log = "0.4"
 serde-json-wasm = "0.5.0"
 serde = { version = "*", features = ["derive"] }
-chrono = "0.4"
