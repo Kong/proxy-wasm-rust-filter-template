@@ -33,3 +33,13 @@ cargo build --release
 ```
 
 This will produce a .wasm file in `target/wasm32-wasi/release/`.
+
+Testing
+=======
+
+In the `test/` folder you will find a shell script called `demo.sh` which
+builds the filter, then uses Docker to spin up a [Kong
+Gateway](https://konghq.com) container with the filter enabled, and issues a
+request using [httpie](https://httpie.io). It uses the configuration
+`test/config`. You should see the `X-Greeting` header defined in that
+configuration in the httpie output.
