@@ -20,7 +20,7 @@ Requirements
 
 * Rust
   * [rustup.rs](https://rustup.rs) is the easiest way to install Rust.
-    * Then add the Wasm32-WASI target to your toolchain: `rustup target add wasm32-wasi`.
+    * Then add the Wasm32-WASI (snapshot 1) target to your toolchain: `rustup target add wasm32-wasip1`.
 
 Build
 =====
@@ -32,7 +32,7 @@ you can build it with:
 cargo build --release
 ```
 
-This will produce a .wasm file in `target/wasm32-wasi/release/`.
+This will produce a .wasm file in `target/wasm32-wasip1/release/`.
 
 Testing
 =======
